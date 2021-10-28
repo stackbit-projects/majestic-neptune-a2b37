@@ -32,7 +32,7 @@ export default function Home() {
     </p>
   );
   const heroData = {
-    title: "Welcome to my Website this is Hero Text",
+    title: "Welcome to my Website This is Hero Text",
     subtitle: subtitleElement,
     helperElement: helperElement,
   };
