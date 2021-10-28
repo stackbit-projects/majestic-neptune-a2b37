@@ -32,7 +32,7 @@ export default function Home() {
     </p>
   );
   const heroData = {
-    title: "Core Web Vital Ready Next JS Template",
+    title: "Welcome to my Website this is Hero Text",
     subtitle: subtitleElement,
     helperElement: helperElement,
   };
