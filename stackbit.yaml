@@ -1,0 +1,56 @@
+stackbitVersion: ~0.3.0
+ssgName: nextjs
+nodeVersion: '12'
+publishDir: out
+dataDir: public/favicons
+pagesDir: data
+models:
+  blog:
+    type: page
+    label: Blog
+    folder: blog
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: date
+        name: publishedAt
+        label: Published At
+      - type: string
+        name: summary
+        label: Summary
+      - type: image
+        name: image
+        label: Image
+  data:
+    type: page
+    label: Data
+    match: '*'
+    fields: []
+  manifest:
+    type: data
+    label: Manifest
+    file: manifest.json
+    fields:
+      - type: string
+        name: name
+        label: Name
+      - type: list
+        name: icons
+        label: Icons
+        items:
+          type: object
+          fields:
+            - type: image
+              name: src
+              label: Src
+            - type: string
+              name: sizes
+              label: Sizes
+            - type: string
+              name: type
+              label: Type
+            - type: string
+              name: density
+              label: Density
